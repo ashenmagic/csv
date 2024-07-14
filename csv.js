@@ -10,6 +10,7 @@ function parse(
   csv
 ) {
   const rows = csv
+    .trim() // remove surrounding whitespace
     .split('\n') // split string to lines
     .map(e => e.trim()) // remove white spaces for each line
     .map(e => e.split(',').map(e => e.trim()));
