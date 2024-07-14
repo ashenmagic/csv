@@ -1,6 +1,6 @@
 {
   "name": "@voidvoxel/csv",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "CSV analogue to the standard JSON module",
   "main": "csv.js",
   "scripts": {
