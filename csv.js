@@ -21,7 +21,15 @@ function parse(
   for (const row of rows) {
     const object = {};
 
-    for (const key of keys) object[key] = row[keys.indexOf(key)];
+    for (const key of keys) {
+      value = row[keys.indexOf(key)];
+
+      try {
+        value = JSON.parse(value);
+      } catch {}
+
+      object[key] = value;
+    }
 
     array.push(object);
   }
