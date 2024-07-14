@@ -1,0 +1,32 @@
+{
+  "name": "@voidvoxel/csv",
+  "version": "0.0.0",
+  "description": "CSV analogue to the standard JSON module",
+  "main": "csv.js",
+  "scripts": {
+    "lint": "eslint --fix",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/voidvoxel/csv.git"
+  },
+  "keywords": [
+    "array",
+    "comma",
+    "comma-separated",
+    "csv",
+    "records",
+    "values"
+  ],
+  "author": "Ashlynn Juniper",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/voidvoxel/csv/issues"
+  },
+  "homepage": "https://github.com/voidvoxel/csv#readme",
+  "devDependencies": {
+    "eslint": "^9.6.0",
+    "eslint-plugin-no-floating-promise": "^2.0.0"
+  }
+}

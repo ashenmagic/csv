@@ -1,0 +1,16 @@
+# Git
+.git/
+.gitattributes
+.gitignore
+
+# Dependencies
+node_modules/
+
+# Source code
+src/
+
+# Configuration files
+eslint.config.js
+
+# Tests
+test.js
