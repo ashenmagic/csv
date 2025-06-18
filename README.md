@@ -27,11 +27,10 @@ const CSV = require("@voidvoxel/csv");
 ### Parse
 
 ```js
-const csv = `name,gender,age
-Ashlynn,female,25
-Haley,female,25
-Carlos,male,28
-Kua,male,23`;
+const csv = `animal_type,has_legs,can_fly
+bird,true,true
+dog,true,false
+fish,false,false`;
 
 const array = CSV.parse(csv);
 
@@ -42,10 +41,9 @@ console.log(array);
 
 ```js
 const array = [
-  { name: 'Ashlynn', gender: 'female', age: '25' },
-  { name: 'Haley', gender: 'female', age: '25' },
-  { name: 'Carlos', gender: 'male', age: '28' },
-  { name: 'Kua', gender: 'male', age: '23' }
+  { animal_type: 'bird', has_legs: 'true', can_fly: 'true' },
+  { animal_type: 'dog', has_legs: 'true', can_fly: 'false' },
+  { animal_type: 'fish', has_legs: 'false', can_fly: 'false' }
 ];
 
 const csv = CSV.stringify(array);
